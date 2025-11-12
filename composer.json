@@ -1,0 +1,29 @@
+{
+  "name": "yosef/libyan-badwords",
+  "description": "A Laravel package to filter Libyan bad words",
+  "type": "library",
+  "license": "MIT",
+  "autoload": {
+    "psr-4": {
+      "Yosef\\LibyanBadwords\\": "src/"
+    },
+    "files": [
+      "src/Helpers/functions.php"
+    ]
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "Yosef\\LibyanBadwords\\Providers\\BadWordsServiceProvider"
+      ],
+      "aliases": {
+        "LibyanBadWords": "Yosef\\LibyanBadwords\\Facades\\LibyanBadWords"
+      }
+    }
+  },
+  "require": {
+    "php": ">=8.0",
+    "illuminate/support": "^10.0|^11.0|^12.0"
+  },
+  "minimum-stability": "stable"
+}
